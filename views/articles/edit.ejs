@@ -1,0 +1,284 @@
+<% layout('layouts/boilerplate') %>
+<div class="row">
+    <h1 class="text-center">Edit Article</h1>
+    <div class="col-6 offset-3">
+        <form id="myForm" action="/articles/<%= article._id %>?_method=PUT" method="POST" novalidate class="validated-form">
+            <div class="mb-3">
+                <label class="form-label" for="title">Title</label>
+                <input class="form-control" type="text" id="title" name="article[title]" value="<%= article.title %>" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="game">Game</label>
+                <input class="form-control" type="text" id="game" name="article[game]" value="<%= article.game %>" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="image">Image</label>
+                <input class="form-control" type="text" id="image" name="article[image]" value="<%= article.image %>" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="release">Release</label>
+                <input class="form-control" type="text" id="release" name="article[release]" value="<%= article.release %>" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="console">Console</label>
+                <input class="form-control" type="text" id="console" name="article[console]" value="<%= article.console %>" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="blog">Blog</label>
+                <textarea class="form-control" type="text" id="mytextarea" name="article[blog]"><%= article.blog %></textarea>
+            </div>
+            <h2>Movies</h2>
+            <div class="mb-3">
+                <label class="form-label" for="movieOne">#1 Movie</label>
+                <input class="form-control" type="text" name="article[movieOne]" id="movieOne" value="<%= article.movieOne %>" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="movieOneImage">#1 Movie Image</label>
+                <input class="form-control" type="text" name="article[movieOneImage]" id="movieOneImage" value="<%= article.movieOneImage %>" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="movieTwo">#2 Movie</label>
+                <input class="form-control" type="text" name="article[movieTwo]" id="movieTwo" value="<%= article.movieTwo %>" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="movieTwoImage">#2 Movie Image</label>
+                <input class="form-control" type="text" name="article[movieTwoImage]" id="movieTwoImage" value="<%= article.movieTwoImage %>" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="movieThree">#3 Movie</label>
+                <input class="form-control" type="text" name="article[movieThree]" id="movieThree" value="<%= article.movieThree %>" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="movieThreeImage">#3 Movie Image</label>
+                <input class="form-control" type="text" name="article[movieThreeImage]" id="movieThreeImage" value="<%= article.movieThreeImage %>" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="movieFour">#4 Movie</label>
+                <input class="form-control" type="text" name="article[movieFour]" id="movieFour" value="<%= article.movieFour %>" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="movieFourImage">#4 Movie Image</label>
+                <input class="form-control" type="text" name="article[movieFourImage]" id="movieFourImage" value="<%= article.movieFourImage %>" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="movieFive">#5 Movie</label>
+                <input class="form-control" type="text" name="article[movieFive]" id="movieFive" value="<%= article.movieFive %>" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="movieFiveImage">#5 Movie Image</label>
+                <input class="form-control" type="text" name="article[movieFiveImage]" id="movieFiveImage" value="<%= article.movieFiveImage %>" required>
+            </div>
+            <h2>Music</h2>
+            <div class="mb-3">
+                <label class="form-label" for="musicOne">#1 Music</label>
+                <input class="form-control" type="text" name="article[musicOne]" id="musicOne" value="<%= article.musicOne %>" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="musicOneImage">#1 Music Image</label>
+                <input class="form-control" type="text" name="article[musicOneImage]" id="musicOneImage" value="<%= article.musicOneImage %>" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="musicTwo">#2 Music</label>
+                <input class="form-control" type="text" name="article[musicTwo]" id="musicTwo" value="<%= article.musicTwo %>" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="musicTwoImage">#2 Music Image</label>
+                <input class="form-control" type="text" name="article[musicTwoImage]" id="musicTwoImage" value="<%= article.musicTwoImage %>" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="musicThree">#3 Music</label>
+                <input class="form-control" type="text" name="article[musicThree]" id="musicThree" value="<%= article.musicThree %>" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="musicThreeImage">#3 Music Image</label>
+                <input class="form-control" type="text" name="article[musicThreeImage]" id="musicThreeImage" value="<%= article.musicThreeImage %>" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="musicFour">#4 Music</label>
+                <input class="form-control" type="text" name="article[musicFour]" id="musicFour" value="<%= article.musicFour %>" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="musicFourImage">#4 Music Image</label>
+                <input class="form-control" type="text" name="article[musicFourImage]" id="musicFourImage" value="<%= article.musicFourImage %>" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="musicFive">#5 Music</label>
+                <input class="form-control" type="text" name="article[musicFive]" id="musicfive" value="<%= article.musicFive %>" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="musicFiveImage">#5 Music Image</label>
+                <input class="form-control" type="text" name="article[musicFiveImage]" id="musicFiveImage" value="<%= article.musicFiveImage %>" required>
+            </div>
+            <h2>NBA</h2>
+            <div class="mb-3">
+                <label class="form-label" for="nbaOne">#1 Team</label>
+                <input class="form-control" type="text" name="article[nbaOne]" id="nbaOne" value="<%= article.nbaOne %>" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="nbaOneImage">#1 Team Image</label>
+                <input class="form-control" type="text" name="article[nbaOneImage]" id="nbaOneImage" value="<%= article.nbaOneImage %>" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="nbaTwo">#2 Team</label>
+                <input class="form-control" type="text" name="article[nbaTwo]" id="nbaTwo" value="<%= article.nbaTwo %>" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="nbaTwoImage">#2 Team Image</label>
+                <input class="form-control" type="text" name="article[nbaTwoImage]" id="nbaTwoImage" value="<%= article.nbaTwoImage %>" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="nbaThree">#3 Team</label>
+                <input class="form-control" type="text" name="article[nbaThree]" id="nbaThree" value="<%= article.nbaThree %>" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="nbaThreeImage">#3 Team Image</label>
+                <input class="form-control" type="text" name="article[nbaThreeImage]" id="nbaThreeImage" value="<%= article.nbaThreeImage %>" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="nbaFour">#4 Team</label>
+                <input class="form-control" type="text" name="article[nbaFour]" id="nbaFour" value="<%= article.nbaFour %>" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="nbaFourImage">#4 Team Image</label>
+                <input class="form-control" type="text" name="article[nbaFourImage]" id="nbaFourImage" value="<%= article.nbaFourImage %>" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="nbaFive">#5 Team</label>
+                <input class="form-control" type="text" name="article[nbaFive]" id="nbaFive" value="<%= article.nbaFive %>" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="nbaFiveImage">#5 Team Image</label>
+                <input class="form-control" type="text" name="article[nbaFiveImage]" id="nbaFiveImage" value="<%= article.nbaFiveImage %>" required>
+            </div>
+            <h2>NHL</h2>
+            <div class="mb-3">
+                <label class="form-label" for="nhlOne">#1 Team</label>
+                <input class="form-control" type="text" name="article[nhlOne]" id="nhlOne" value="<%= article.nhlOne %>" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="nhlOneImage">#1 Team Image</label>
+                <input class="form-control" type="text" name="article[nhlOneImage]" id="nhlOneImage" value="<%= article.nhlOneImage %>" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="nhlTwo">#2 Team</label>
+                <input class="form-control" type="text" name="article[nhlTwo]" id="nhlTwo" value="<%= article.nhlTwo %>" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="nhlTwoImage">#2 Team Image</label>
+                <input class="form-control" type="text" name="article[nhlTwoImage]" id="nhlTwoImage" value="<%= article.nhlTwoImage %>" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="nhlThree">#3 Team</label>
+                <input class="form-control" type="text" name="article[nhlThree]" id="nhlThree" value="<%= article.nhlThree %>" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="nhlThreeImage">#3 Team Image</label>
+                <input class="form-control" type="text" name="article[nhlThreeImage]" id="nhlThreeImage" value="<%= article.nhlThreeImage %>" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="nhlFour">#4 Team</label>
+                <input class="form-control" type="text" name="article[nhlFour]" id="nhlFour" value="<%= article.nhlFour %>" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="nhlFourImage">#4 Team Image</label>
+                <input class="form-control" type="text" name="article[nhlFourImage]" id="nhlFourImage" value="<%= article.nhlFourImage %>" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="nhlFive">#5 Team</label>
+                <input class="form-control" type="text" name="article[nhlFive]" id="nhlFive" value="<%= article.nhlFive %>" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="nhlFiveImage">#5 Team Image</label>
+                <input class="form-control" type="text" name="article[nhlFiveImage]" id="nhlFiveImage" value="<%= article.nhlFiveImage %>" required>
+            </div>
+            <h2>MLB</h2>
+            <div class="mb-3">
+                <label class="form-label" for="mlbOne">#1 Team</label>
+                <input class="form-control" type="text" name="article[mlbOne]" id="mlbOne" value="<%= article.mlbOne %>" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="mlbOneImage">#1 Team Image</label>
+                <input class="form-control" type="text" name="article[mlbOneImage]" id="mlbOneImage" value="<%= article.mlbOneImage %>" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="mlbTwo">#2 Team</label>
+                <input class="form-control" type="text" name="article[mlbTwo]" id="mlbTwo" value="<%= article.mlbTwo %>" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="mlbTwoImage">#2 Team Image</label>
+                <input class="form-control" type="text" name="article[mlbTwoImage]" id="mlbTwoImage" value="<%= article.mlbTwoImage %>" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="mlbThree">#3 Team</label>
+                <input class="form-control" type="text" name="article[mlbThree]" id="mlbThree" value="<%= article.mlbThree %>" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="mlbThreeImage">#3 Team Image</label>
+                <input class="form-control" type="text" name="article[mlbThreeImage]" id="mlbThreeImage" value="<%= article.mlbThreeImage %>" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="mlbFour">#4 Team</label>
+                <input class="form-control" type="text" name="article[mlbFour]" id="mlbFour" value="<%= article.mlbFour %>" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="mlbFourImage">#4 Team Image</label>
+                <input class="form-control" type="text" name="article[mlbFourImage]" id="mlbFourImage" value="<%= article.mlbFourImage %>" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="mlbFive">#5 Team</label>
+                <input class="form-control" type="text" name="article[mlbFive]" id="mlbFive" value="<%= article.mlbFive %>" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="mlbFiveImage">#5 Team Image</label>
+                <input class="form-control" type="text" name="article[mlbFiveImage]" id="mlbFiveImage" value="<%= article.mlbFiveImage %>" required>
+            </div>
+            <h2>NFL</h2>
+            <div class="mb-3">
+                <label class="form-label" for="nflOne">#1 Team</label>
+                <input class="form-control" type="text" name="article[nflOne]" id="nflOne" value="<%= article.nflOne %>" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="nflOneImage">#1 Team Image</label>
+                <input class="form-control" type="text" name="article[nflOneImage]" id="nflOneImage" value="<%= article.nflOneImage %>" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="nflTwo">#2 Team</label>
+                <input class="form-control" type="text" name="article[nflTwo]" id="nflTwo" value="<%= article.nflTwo %>" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="nflTwoImage">#2 Team Image</label>
+                <input class="form-control" type="text" name="article[nflTwoImage]" id="nflTwoImage" value="<%= article.nflTwoImage %>" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="nflThree">#3 Team</label>
+                <input class="form-control" type="text" name="article[nflThree]" id="nflThree" value="<%= article.nflThree %>" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="nflThreeImage">#3 Team Image</label>
+                <input class="form-control" type="text" name="article[nflThreeImage]" id="nflThreeImage" value="<%= article.nflThreeImage %>" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="nflFour">#4 Team</label>
+                <input class="form-control" type="text" name="article[nflFour]" id="nflFour" value="<%= article.nflFour %>" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="nflFourImage">#4 Team Image</label>
+                <input class="form-control" type="text" name="article[nflFourImage]" id="nflFourImage" value="<%= article.nflFourImage %>" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="nflFive">#5 Team</label>
+                <input class="form-control" type="text" name="article[nflFive]" id="nflFive" value="<%= article.nflFive %>" required>
+            </div>
+            <div class="mb-3">
+                <label class="form-label" for="nflFiveImage">#5 Team Image</label>
+                <input class="form-control" type="text" name="article[nflFiveImage]" id="nflFiveImage" value="<%= article.nflFiveImage %>" required>
+            </div>
+            <div class="mb-3">
+            <button class="btn btn-success">Update</button>
+            </div>
+        </form>
+        <div>
+            <a class="btn btn-warning" href="/articles/<%= article._id %>">Back to <%= article.game %></a>
+        </div>
+    </div>
+</div>
