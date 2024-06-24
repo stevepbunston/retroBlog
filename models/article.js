@@ -11,160 +11,70 @@ const ArticleSchema = new Schema({
     images: [
         {
             url: String,
-            fileName: String
+            filename: String
         }
     ],
     console: String,
     movieOne: String,
-    movieOneImage: {
-        url: String,
-        fileName: String
-    },
+    movieOneImage: String,
     movieTwo: String,
-    movieTwoImage: {
-        url: String,
-        fileName: String
-    },
+    movieTwoImage: String,
     movieThree: String,
-    movieThreeImage: {
-        url: String,
-        fileName: String
-    },
+    movieThreeImage: String,
     movieFour: String,
-    movieFourImage: {
-        url: String,
-        fileName: String
-    },
+    movieFourImage: String,
     movieFive: String,
-    movieFiveImage: {
-        url: String,
-        fileName: String
-    },
+    movieFiveImage: String,
     musicOne: String,
-    musicOneImage: {
-        url: String,
-        fileName: String
-    },
+    musicOneImage: String,
     musicTwo: String,
-    musicTwoImage: {
-        url: String,
-        fileName: String
-    },
+    musicTwoImage: String,
     musicThree: String,
-    musicThreeImage: {
-        url: String,
-        fileName: String
-    },
+    musicThreeImage: String,
     musicFour: String,
-    musicFourImage: {
-        url: String,
-        fileName: String
-    },
+    musicFourImage: String,
     musicFive: String,
-    musicFiveImage: {
-        url: String,
-        fileName: String
-    },
+    musicFiveImage: String,
     nhlOne: String,
-    nhlOneImage: {
-        url: String,
-        fileName: String
-    },
+    nhlOneImage: String,
     nhlTwo: String,
-    nhlTwoImage: {
-        url: String,
-        fileName: String
-    },
+    nhlTwoImage: String,
     nhlThree: String,
-    nhlThreeImage: {
-        url: String,
-        fileName: String
-    },
+    nhlThreeImage: String,
     nhlFour: String,
-    nhlFourImage: {
-        url: String,
-        fileName: String
-    },
+    nhlFourImage: String,
     nhlFive: String,
-    nhlFiveImage: {
-        url: String,
-        fileName: String
-    },
+    nhlFiveImage: String,
     nbaOne: String,
-    nbaOneImage: {
-        url: String,
-        fileName: String
-    },
+    nbaOneImage: String,
     nbaTwo: String,
-    nbaTwoImage: {
-        url: String,
-        fileName: String
-    },
+    nbaTwoImage: String,
     nbaThree: String,
-    nbaThreeImage: {
-        url: String,
-        fileName: String
-    },
+    nbaThreeImage: String,
     nbaFour: String,
-    nbaFourImage: {
-        url: String,
-        fileName: String
-    },
+    nbaFourImage: String,
     nbaFive: String,
-    nbaFiveImage: {
-        url: String,
-        fileName: String
-    },
+    nbaFiveImage: String,
     mlbOne: String,
-    mlbOneImage: {
-        url: String,
-        fileName: String
-    },
+    mlbOneImage: String,
     mlbTwo: String,
-    mlbTwoImage: {
-        url: String,
-        fileName: String
-    },
+    mlbTwoImage: String,
     mlbThree: String,
-    mlbThreeImage: {
-        url: String,
-        fileName: String
-    },
+    mlbThreeImage: String,
     mlbFour: String,
-    mlbFourImage: {
-        url: String,
-        fileName: String
-    },
+    mlbFourImage: String,
     mlbFive: String,
-    mlbFiveImage: {
-        url: String,
-        fileName: String
-    },
+    mlbFiveImage: String,
     nflOne: String,
-    nflOneImage: {
-        url: String,
-        fileName: String
-    },
+    nflOneImage: String,
     nflTwo: String,
-    nflTwoImage: {
-        url: String,
-        fileName: String
-    },
+    nflTwoImage: String,
     nflThree: String,
-    nflThreeImage: {
-        url: String,
-        fileName: String
-    },
+    nflThreeImage: String,
     nflFour: String,
-    nflFourImage: {
-        url: String,
-        fileName: String
-    },
+    nflFourImage: String,
     nflFive: String,
-    nflFiveImage: {
-        url: String,
-        fileName: String
-    },
+    nflFiveImage: String,
     reviews: [
         {
             type: Schema.Types.ObjectId,
