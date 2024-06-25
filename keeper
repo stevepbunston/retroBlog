@@ -1,5 +1,3 @@
-new
-
 <% layout('layouts/boilerplate') %>
 <div class="row">
     <h1 class="text-center">New Article</h1>
@@ -352,3 +350,9 @@ nflFour: String,
 nflFourImage: String,
 nflFive: String,
 nflFiveImage: String,
+
+
+
+routes .post
+
+.post(isAdmin, upload.array('image'),validateArticle, catchAsync(articles.createArticle));
