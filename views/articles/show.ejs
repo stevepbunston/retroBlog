@@ -6,26 +6,12 @@
               Box Office Top 5
             </div>
             <ul class="list-group list-group-flush">
+              <% for(let i = 0; i < article.movies.length; i++) { %>
               <li class="list-group-item d-flex justify-content-between align-items-center">
-                <span class="text-truncate small-text">1. <%= article.movieOne %></span>
-                <img class="small-img ml-auto" src="<%= article.movieOneImage %>" alt="">
+                  <span class="text-truncate small-text"><%= i + 1 %>. <%= article.movies[i].title %></span>
+                  <img class="small-img ml-auto" src="<%= article.movies[i].image.url %>" alt="">
               </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-                <span class="text-truncate small-text">2. <%= article.movieTwo %></span>
-                <img class="small-img ml-auto" src="<%= article.movieTwoImage %>" alt="">
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-                <span class="text-truncate small-text">3. <%= article.movieThree %></span>
-                <img class="small-img ml-auto" src="<%= article.movieThreeImage %>" alt="">
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-                <span class="text-truncate small-text">4. <%= article.movieFour %></span>
-                <img class="small-img ml-auto" src="<%= article.movieFourImage %>" alt="">
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-                <span class="text-truncate small-text">5. <%= article.movieFive %></span>
-                <img class="small-img ml-auto" src="<%= article.movieFiveImage %>" alt="">
-              </li>
+              <% } %>
             </ul>
           </div>
           <div class="card mb-3">
@@ -33,26 +19,12 @@
               NBA Top 5
             </div>
             <ul class="list-group list-group-flush">
+              <% for(let i = 0; i < article.nba.length; i++) { %>
               <li class="list-group-item d-flex justify-content-between align-items-center">
-                <span class="text-truncate small-text">1. <%= article.nbaOne %></span>
-                <img class="small-img ml-auto" src="<%= article.nbaOneImage %>" alt="">
+                  <span class="text-truncate small-text"><%= i + 1 %>. <%= article.nba[i].title %></span>
+                  <img class="small-img ml-auto" src="<%= article.nba[i].image.url %>" alt="">
               </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-                <span class="text-truncate small-text">2. <%= article.nbaTwo %></span>
-                <img class="small-img ml-auto" src="<%= article.nbaTwoImage %>" alt="">
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-                <span class="text-truncate small-text">3. <%= article.nbaThree %></span>
-                <img class="small-img ml-auto" src="<%= article.nbaThreeImage %>" alt="">
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-                <span class="text-truncate small-text">4. <%= article.nbaFour %></span>
-                <img class="small-img ml-auto" src="<%= article.nbaFourImage %>" alt="">
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-                <span class="text-truncate small-text">5. <%= article.nbaFive %></span>
-                <img class="small-img ml-auto" src="<%= article.nbaFiveImage %>" alt="">
-              </li>
+              <% } %>
             </ul>
           </div>
           <div class="card mb-3">
@@ -60,26 +32,12 @@
               MLB Top 5
             </div>
             <ul class="list-group list-group-flush">
+              <% for(let i = 0; i < article.mlb.length; i++) { %>
               <li class="list-group-item d-flex justify-content-between align-items-center">
-                <span class="text-truncate small-text">1. <%= article.mlbOne %></span>
-                <img class="small-img ml-auto" src="<%= article.mlbOneImage %>" alt="">
+                  <span class="text-truncate small-text"><%= i + 1 %>. <%= article.mlb[i].title %></span>
+                  <img class="small-img ml-auto" src="<%= article.mlb[i].image.url %>" alt="">
               </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-                <span class="text-truncate small-text">2. <%= article.mlbTwo %></span>
-                <img class="small-img ml-auto" src="<%= article.mlbTwoImage %>" alt="">
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-                <span class="text-truncate small-text">3. <%= article.mlbThree %></span>
-                <img class="small-img ml-auto" src="<%= article.mlbThreeImage %>" alt="">
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-                <span class="text-truncate small-text">4. <%= article.mlbFour %></span>
-                <img class="small-img ml-auto" src="<%= article.mlbFourImage %>" alt="">
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-                <span class="text-truncate small-text">5. <%= article.mlbFive %></span>
-                <img class="small-img ml-auto" src="<%= article.mlbFiveImage %>" alt="">
-              </li>
+              <% } %>
             </ul>
           </div>
     </div>
@@ -113,26 +71,12 @@
               Billboard Top 5
             </div>
             <ul class="list-group list-group-flush">
+              <% for(let i = 0; i < article.music.length; i++) { %>
               <li class="list-group-item d-flex justify-content-between align-items-center">
-                <span class="text-truncate small-text">1. <%= article.musicOne %></span>
-                <img class="small-img ml-auto" src="<%= article.musicOneImage %>" alt="">
+                  <span class="text-truncate small-text"><%= i + 1 %>. <%= article.music[i].title %></span>
+                  <img class="small-img ml-auto" src="<%= article.music[i].image.url %>" alt="">
               </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-                <span class="text-truncate small-text">2. <%= article.musicTwo %></span>
-                <img class="small-img ml-auto" src="<%= article.musicTwoImage %>" alt="">
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-                <span class="text-truncate small-text">3. <%= article.musicThree %></span>
-                <img class="small-img ml-auto" src="<%= article.musicThreeImage %>" alt="">
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-                <span class="text-truncate small-text">4. <%= article.musicFour %></span>
-                <img class="small-img ml-auto" src="<%= article.musicFourImage %>" alt="">
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-                <span class="text-truncate small-text">5. <%= article.musicFive %></span>
-                <img class="small-img ml-auto" src="<%= article.musicFiveImage %>" alt="">
-              </li>
+              <% } %>
             </ul>
           </div>
           <div class="card mb-3">
@@ -140,53 +84,25 @@
               NHL Top 5
             </div>
             <ul class="list-group list-group-flush">
+              <% for(let i = 0; i < article.nhl.length; i++) { %>
               <li class="list-group-item d-flex justify-content-between align-items-center">
-                <span class="text-truncate small-text">1. <%= article.nhlOne %></span>
-                <img class="small-img ml-auto" src="<%= article.nhlOneImage %>" alt="">
+                  <span class="text-truncate small-text"><%= i + 1 %>. <%= article.nhl[i].title %></span>
+                  <img class="small-img ml-auto" src="<%= article.nhl[i].image.url %>" alt="">
               </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-                <span class="text-truncate small-text">2. <%= article.nhlTwo %></span>
-                <img class="small-img ml-auto" src="<%= article.nhlTwoImage %>" alt="">
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-                <span class="text-truncate small-text">3. <%= article.nhlThree %></span>
-                <img class="small-img ml-auto" src="<%= article.nhlThreeImage %>" alt="">
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-                <span class="text-truncate small-text">4. <%= article.nhlFour %></span>
-                <img class="small-img ml-auto" src="<%= article.nhlFourImage %>" alt="">
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-                <span class="text-truncate small-text">5. <%= article.nhlFive %></span>
-                <img class="small-img ml-auto" src="<%= article.nhlFiveImage %>" alt="">
-              </li>
-            </ul>
+              <% } %>
+          </ul>
           </div>
           <div class="card mb-3">
             <div class="card-header">
               NFL Top 5
             </div>
             <ul class="list-group list-group-flush">
+              <% for(let i = 0; i < article.nfl.length; i++) { %>
               <li class="list-group-item d-flex justify-content-between align-items-center">
-                <span class="text-truncate small-text">1. <%= article.nflOne %></span>
-                <img class="small-img ml-auto" src="<%= article.nflOneImage %>" alt="">
+                  <span class="text-truncate small-text"><%= i + 1 %>. <%= article.nfl[i].title %></span>
+                  <img class="small-img ml-auto" src="<%= article.nfl[i].image.url %>" alt="">
               </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-                <span class="text-truncate small-text">2. <%= article.nflTwo %></span>
-                <img class="small-img ml-auto" src="<%= article.nflTwoImage %>" alt="">
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-                <span class="text-truncate small-text">3. <%= article.nflThree %></span>
-                <img class="small-img ml-auto" src="<%= article.nflThreeImage %>" alt="">
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-                <span class="text-truncate small-text">4. <%= article.nflFour %></span>
-                <img class="small-img ml-auto" src="<%= article.nflFourImage %>" alt="">
-              </li>
-              <li class="list-group-item d-flex justify-content-between align-items-center">
-                <span class="text-truncate small-text">5. <%= article.nflFive %></span>
-                <img class="small-img ml-auto" src="<%= article.nflFiveImage %>" alt="">
-              </li>
+              <% } %>
             </ul>
           </div>
     </div>
