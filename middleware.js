@@ -2,6 +2,7 @@ const { articleSchema, reviewSchema } = require('./schemas.js');
 const ExpressError = require('./utils/ExpressError');
 const Review = require('./models/review');
 
+
 module.exports.validateArticle = (req, res, next) => {
     const { error } = articleSchema.validate(req.body);
     if(error){

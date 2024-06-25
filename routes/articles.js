@@ -10,7 +10,6 @@ const upload = multer({ storage });
 router.route('/')
     .get(catchAsync(articles.index))
     .post(isAdmin, upload.array('image'),validateArticle, catchAsync(articles.createArticle));
-
 router.get('/new', isAdmin, articles.renderNewForm);
 
 router.route('/:id')

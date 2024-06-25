@@ -1,5 +1,6 @@
 const Joi = require('joi');
 
+
 module.exports.articleSchema = Joi.object({
     article: Joi.object({
         title: Joi.string().required(),
@@ -77,4 +78,3 @@ module.exports.reviewSchema = Joi.object({
         body: Joi.string().required()
     }).required()
 });
-
