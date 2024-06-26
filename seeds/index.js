@@ -20,7 +20,9 @@ const seedDB = async () => {
     const entry = new Article({
         title: "It's a me Mariooo",
         game: "Super Mario 64",
-        image: "https://oyster.ignimgs.com/mediawiki/apis.ign.com/super-mario-64/b/ba/Super-mario-64-1920x1080.jpg",
+        images: {url: 'https://res.cloudinary.com/duil5vwuw/image/upload/v1719353060/RetroBlog/hn3upfcsfhte2wowjqb5.jpg',
+        filename: 'RetroBlog/hn3upfcsfhte2wowjqb5'
+        },
         release: 1996,
         console: "Nintendo 64",
         blog: "insert here"

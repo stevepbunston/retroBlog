@@ -29,7 +29,7 @@ router.get('/new', isAdmin, articles.renderNewForm);
 
 router.route('/:id')
     .get(catchAsync(articles.renderEditForm))
-    .put(validateArticle, isAdmin, catchAsync(articles.updateArticle))
+    .put(isAdmin, validateArticle, catchAsync(articles.updateArticle))
     .delete(isAdmin, catchAsync(articles.deleteArticle));
 
 router.get('/:id/edit', isAdmin, catchAsync(articles.editArticle));
