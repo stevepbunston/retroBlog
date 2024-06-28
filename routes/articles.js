@@ -29,10 +29,10 @@ router.route('/')
 router.get('/new', isLoggedIn, isAdmin, articles.renderNewForm);
 
 router.route('/:id')
-    .get(catchAsync(articles.renderEditForm))
+    .get(catchAsync(articles.showArticle))
     .put(isLoggedIn, isAdmin, validateArticle, catchAsync(articles.updateArticle))
     .delete(isLoggedIn, isAdmin, catchAsync(articles.deleteArticle));
 
-router.get('/:id/edit', isAdmin, catchAsync(articles.editArticle));
+router.get('/:id/edit', isAdmin, catchAsync(articles.renderEditArticle));
 
 module.exports = router;

@@ -81,7 +81,7 @@ module.exports.createArticle = async (req, res) => {
     res.redirect(`/articles/${article._id}`);
 } */
 
-module.exports.renderEditForm = async (req, res) => {
+module.exports.showArticle = async (req, res) => {
     const article = await Article.findById(req.params.id).populate({
         path: 'reviews',
         populate: {
@@ -95,7 +95,7 @@ module.exports.renderEditForm = async (req, res) => {
     res.render('articles/show', {article});
 }
 
-module.exports.editArticle = async (req, res) => {
+module.exports.renderEditArticle = async (req, res) => {
     const article = await Article.findById(req.params.id);
     if(!article){
         req.flash('error', 'Cannot find article!');
